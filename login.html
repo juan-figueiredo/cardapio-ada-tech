@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="/Cardápio Ada Tech/img/Yellow Cute Street Food Minimalist Logo  (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <section id="container">
+        <img src="/Cardápio Ada Tech/img/Screenshot_1.png" alt="logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="/Cardápio Ada Tech/index.html" class="homenav">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">LOCALIZAÇÃO</a></li>
+                <li><a href="#">DELIVERY</a></li>
+                <li><a href="/Cardápio Ada Tech/login.html" class="login">LOGIN</a></li>
+            </ul>
+        </nav>
+    </section>
+</header>
+
+    <section class="home">
+      <h1>STREET FOOD</h1>
+      <h2 class="sub-menu">MENU RESTAURANT</h2>
+      </section>
+
+      <form method="post" action="https://6529a5b255b137ddc83f1046.mockapi.io/api/v1/login">
+      <div class="wrapper">
+        <form action="">
+          <h1>Login</h1>
+          <div class='input-box'>
+            <input type="text" placeholder='Usuário' name='user' required>
+            <i class='bx bxs-user'></i>
+          </div>
+          <div class='input-box'>
+            <input type="password" placeholder='Senha' name="password" required>
+            <i class='bx bxs-lock-alt' ></i>
+          </div>
+          
+          <div class="remember-forgot">
+            <label><input type="checkbox" name="check">Lembrar-me</label>
+            <a href="#" class="esqueceu">Esqueceu a senha?</a>
+          </div>
+          <input type='submit' class='btn'></input>
+          <div class="register-link">
+            <p>Não tem uma conta?
+            <a href="#">Registre-se</a></p>
+          </div>
+      </div>
+    </form>
+
+
+      <footer>
+          <p>Street food Restaurant. © Juan Figueiredo 2023 - Todos os Direitos Reservados.</p>
+        </footer>
+
+        <a href="https://web.whatsapp.com/send?phone=5571999621783" target="_blank" class="wpp">
+          <i class="fa fa-whatsapp"></i>
+        </a>
+
+
+</body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Oxanium:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Waiting+for+the+Sunrise&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Oxanium:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-weight: 800;
+}
+
+html, body{
+    width:100%;
+    max-width: 100vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 150%;
+    background-repeat: no-repeat;
+    background-color: #0B0B0B;
+    overflow-y: hidden;
+}
+
+body{
+  background-image: url(./img/jf\ burguer\ \(10\).png);
+  overflow-y: hidden;
+
+}
+
+img{
+        width: 70px;
+        height: 70px;
+        cursor: pointer;
+        justify-content: flex-start;
+        display: flex;
+        margin-right: 180px;
+        background-color: #171717;
+}
+
+header{
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 99; 
+    background-color: #0B0B0B;
+}
+
+.homenav{
+    color: #ff8a1d;
+    text-decoration: underline linear-gradien;
+}
+
+.homenav:hover{
+    color:white;
+}
+
+.home{
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    padding:70px 10% 0;
+    margin-top: 0px;
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+}
+
+.home-content{
+    max-width:600px;
+    position: relative;
+    top: 50px;
+    background-color: #171717;
+  }
+
+#container{
+    display: flex;
+    background-color: #171717;
+    border-radius: 5px;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+    background-color: #171717;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    background-color: #171717;
+    gap: 110px;
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    background-color: #171717;
+    font-size: 20px;
+    transition: .5S ALL;
+    margin-left: 5px;
+}
+
+.esqueceu{
+  background-color: #0B0B0B;
+}
+
+a:hover{
+    color: #ff8a1d;
+    transition: .5s all;
+}
+
+nav{
+    background-color: #1E1E1E;
+    display: flex;
+}
+
+h3{
+    font-size: 36px;
+}
+
+
+.home h1{
+    font-size: 58px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+}
+
+p{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+img .foto{
+    top: 200px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.home-img img{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 30px #CA35E9;
+    cursor: auto;
+    position: absolute;
+}
+
+.home-img{
+    display: inline;
+    align-items: flex-end;
+    width: 200px;
+    justify-content: flex-end;
+    right: 200px;
+    padding: 0 0 40 0px;
+    position:absolute;
+    left:65%;
+    top: 31%;
+    position: absolute;
+}
+
+
+footer p {
+    color: gray;
+    bottom:300px;
+    display:flex;
+    margin-bottom: 10px;
+    opacity: 50%;
+    font-size: 16px;
+    background:#171717;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+footer{
+    display:flex;
+    background:#171717;
+    width:100%;
+    height:40px;
+    bottom:0;
+    position:fixed;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    opacity: 100;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+.wpp{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 60px;
+  right: 20px;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0 0 30px #ff8a1d;
+  z-index: 100;
+  transition: .5s all;
+  border:2px solid #ff8a1d;
+}
+
+.fa-whatsapp{
+  margin-top: 9px ;
+
+}
+
+.sub-menu{
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  margin-top: 120px;
+  font-size: 22px;
+  color: #ff8a1d;
+}
+
+
+.wrapper{
+  width:420px;
+  background:transparent;
+  border:2px solid #ff8a1d;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px #ff8a1d;
+  color:#fff;
+  border-radius:10px;
+  padding:30px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  left:750px;
+  top: 120px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper h1{
+  font-size:36px;
+  text-align:center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .input-box{
+  position:relative;
+  width:100%;
+  height:50px;
+  margin: 30px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-box input{
+  width:100%;
+  height:100%;
+  background:transparent;
+  border:none;
+  outline:none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px; 
+  font-size:16px;
+  color:#fff;
+  padding:20px 45px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.input-box input::placeholder{
+  color:#fff;
+  opacity: 60%;
+}
+
+.input-box i{
+  position:absolute;
+  right:20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size:20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper .remember-forgot{
+  display:flex;
+  justify-content:space-between;
+  font-size:14.5px;
+  margin:-15px 0 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.remember-forgot label input{
+  accent-color:#fff;
+  margin-right:3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.remember-forgot a{
+  color: white;
+  text-decoration:none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.remember-forgot a:hover{
+  text-decoration:underline;
+}
+
+.wrapper .btn{
+  width:100%;
+  height:45px;
+  background: #ff8a1d;
+  border:none;
+  outline:none;
+  border-radius:40px;
+  box-shadow: 0 0 10px rgba( 0, 0, 0, .1);
+  font-size:16px;
+  cursor:pointer;
+  font-weight:600;
+  color:white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .register-link{
+  font-size: 14.5px;
+  text-align: center;
+  margin:20px 0px 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.register-link p a{
+  color:white;
+  text-decoration:none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0B0B0B;
+}
+
+.register-link p a:hover{
+  text-decoration:none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+    border: 2px solid #ff8a1d;
+    padding: 12px 28px;
+    border-radius: 40px;
+    background-color: #ff8a1d;
+    box-shadow: 0 0 10px #ff8a1d;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s all;
+  }
+
+.btn:hover{
+    background-color: white;
+    color:#ff8a1d;
+    transition: .5s all
+}
+
+</style>
+
+</html>
